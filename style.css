@@ -57,6 +57,10 @@ margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 138px;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 .logo {
     Width: 180px;
     Height: 50px;
@@ -91,7 +95,7 @@ margin: 0 auto;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 992px) {
     .menu_items {
         flex-direction: column;
     }}
@@ -290,6 +294,12 @@ margin: 0 auto;
         padding-left: 50px;}
 }
 
+@media only screen and (max-width: 380px) {
+    .about_img {max-width: 380px;
+    max-height: 570px;}
+    .about {margin-bottom: 0px;}
+}
+
 /* Блок Our Projects */
 
 .projects {
@@ -342,6 +352,9 @@ margin: 0 auto;
         при уменьшении размера экрана */
         padding-left: 15px;
     }
+    .project_p {
+        padding-right: 120px;
+    }
 }
 @media only screen and (max-width: 720px) {
     .projects_grid {
@@ -349,9 +362,19 @@ margin: 0 auto;
     }
     .project_p {
         text-align: start;
+        padding-right: 0;
     }
-    .projects {padding-left: 25px;}
+    .projects {padding-left: 25px;
+        margin-bottom: 500px;}
+        .project_grid_item {
+        }
 }
+@media only screen and (max-width: 385px) {
+    .projects {
+        padding-top: 250px;
+    }
+}
+
 
 /* Блок Testimonial */
 
@@ -441,12 +464,19 @@ margin: 0 auto;
         grid-template-columns: repeat(1, 2fr);
     }
     .testimonial {
-        margin-bottom: 732px;
+        margin-bottom: 1350px;
     }
     .testimonial_h1 {
-        padding-top: 600px;
+        padding-top: 950px;
+    }}
+    @media only screen and (max-width: 385px) {
+        .testimonial{
+            padding-top: 300px;
+            margin-bottom: 1600px;
+        }
     }
-}
+
+
 
 /* Блок Footer */
 
